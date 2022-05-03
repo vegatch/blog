@@ -1,0 +1,186 @@
+:root{
+    --black: #010000;
+    --white: #ffffff;
+    --blue: #0000ff;
+    --lightgray:#d3d3d3;
+    --greenyellow: #adff2f;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+   
+}
+
+body{
+    height: 100px;
+    background-color: black;   
+}
+
+.nav-container{
+    background-color: var(--black);
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-display{
+    /* background-color: var(--blue); 
+    background-color: #0000ff;  */
+    width: 70vw;
+    height: inherit;
+    display: flex;    
+    align-items: center;        
+}
+
+a{
+    text-decoration: none;
+    color: var(--greenyellow);   
+
+}
+
+.nav-logo a{    
+    /* text-shadow: 1px 1px var(--white); */
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.nav-logo{
+    background-color: transparent;    
+    width: 8vw;
+    min-width: 6rem;
+    height: 9vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    
+}
+
+/*
+.nav-logo a{
+    font-size: 3rem;    
+    
+    text-shadow: 1px 1px 2px var(--greenyellow),
+                 0 0 1em rgb(201, 201, 239),
+                 0 0 0.2em rgb(51, 51, 159);
+                 
+}
+*/
+.menu-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: inherit;
+}
+
+li a{
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
+
+.btn-item {
+    border: 2px solid var(--greenyellow);
+    width: 8rem;    
+    height: 5vh;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-item, .nav-logo a{
+    margin-left: 0;
+    padding-left: 0%;
+}
+
+li a:hover {
+    color: var(--white);
+    transition: all 0.5ms ease-in;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+/* home page style */
+.main-container{
+    width: 70vw;
+    display: flex;
+    justify-content: start;
+    margin: auto;
+    /* background-color: hsl(84, 74%, 44%); */
+    height: 100%;
+}
+
+
+.my-info-container{
+    padding-top: 4rem;
+    color: var(--greenyellow);
+    line-height: 2rem;
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+}
+
+.my-name, .my-ability{
+    font-size: 2.8rem;
+    line-height: 4rem;
+    
+}
+
+.my-name{
+    font-size: 3.5rem;
+    
+}
+
+.my-profile{
+    margin-top: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.my-greeting{
+margin-bottom: 1.2rem;
+}
+
+.big-btn{
+    width: 20vw;
+    min-width: 9vw;
+    background-color: transparent;
+    height: 8vh;
+    margin-top: 1.3rem;
+    border: 1px solid var(--greenyellow);
+    font-size: 1.3rem;
+}
+
+
+/* contact page style */
+form{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    color: var(--greenyellow);
+        
+}
+
+form > *{
+    max-width: 400px;
+    
+}
+form > textarea{
+    height: 20rem;
+    margin-bottom: 1.4rem;
+    padding: .4rem;
+}
+
+form > input{
+    height: 1.7rem;
+    padding: .4rem;
+}
+
+.btn-submit{
+    height: 3rem;
+    color: var(--greenyellow);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    background-color: transparent;
+    cursor: pointer;    
+    border: 2px solid var(--greenyellow);
+}
