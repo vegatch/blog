@@ -1,80 +1,33 @@
-const template = document.createElement('template');
+const menuList = document.createElement('template');
 
-template.innerHTML = `
+menuList.innerHTML = `
     <div class="menu-display">
-        <div class="nav-logo"><a href="./index.html">SBA</a></div>
-        <ul class="menu-container">                   
+        <div class="mobile-container">
+            <div class="nav-logo"><a href="./index.html">SBA</a></div>
+            <div class="hamburger">
+                <a onClick="menuToggle()">
+                <i class="fa-solid fa-bars"></i>
+            </a>        
+            </div>
+        </div>        
+        <ul class="menu-container mobile">                   
             <li class="nav-item"><a href="./index.html">Home</a></li>
             <li class="nav-item"><a href="./about.html">About</a></li>
             <li class="nav-item"><a href="./work.html">Work</a></li>
+            <li class="nav-item"><a href="./contact.html">Contact</a></li>
             <li class="nav-item btn-item"><a href="./resume.html">Resume</a></li>
+            
         </ul>
     </div>
 `;
-document.getElementById('menu-display').appendChild(template.content);
+document.getElementById('menu-display').appendChild(menuList.content);
+console.log(menuList.content)
 
-
-
-// (function() {
-//     // https://dashboard.emailjs.com/admin/account
-//     emailjs.init("XhKv7nyqdxTaERRBm");
-// })();
-   
-// window.onload = function() {
-//     document.getElementById('contact-form').addEventListener('submit', function(event) {
-//         event.preventDefault();
-//         // generate a five digit number for the contact_number variable
-//         this.contact_number.value = Math.random() * 100000 | 0;
-//         // these IDs from the previous steps
-        
-//         emailjs.sendForm('contact_service', 'contact_form', this)
-//             .then(function() {
-//                 console.log('SUCCESS!');
-//             }, function(error) {
-//                     console.log('FAILED...', error);
-//                 });
-//             });
-//         }
-
-
-//     var templateParams = {
-//     name: 'Dude',
-//     notes: 'Check this out!'
-// };
- 
-// emailjs.send('yvecKa1979', 'template_1xqzy6o', templateParams)
-//     .then(function(response) {
-//        console.log('SUCCESS!', response.status, response.text);
-//     }, function(error) {
-//        console.log('FAILED...', error);
-//     });
-
-// emailjs.sendForm('yvecKa1979', 'template_1xqzy6o', '#myForm')
-//     .then(function(response) {
-//        console.log('SUCCESS!', response.status, response.text);
-//     }, function(error) {
-//        console.log('FAILED...', error);
-//     });
-
-
-
-
- (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('XhKv7nyqdxTaERRBm');
-        })();
-    
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('service_3yjgpu2', 'template_1xqzy6o', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
+let menuToggle = function(){
+    let menu = document.querySelector(".menu-container")
+    if(menu.style.display === "none" ){
+        menu.style.display ="block"
+    }else{
+        menu.style.display ="none" 
+    }
+}

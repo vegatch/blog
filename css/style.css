@@ -22,7 +22,15 @@ body{
     justify-content: center;
     align-items: center;
 }
+.fa-solid{
+    font-size: 1.7rem;
+    color: var(--greenyellow);
+    display: none;
+}
 
+.mobile{
+    display: none;
+}
 .menu-display{
     /* background-color: var(--blue); 
     background-color: #0000ff;  */
@@ -42,6 +50,8 @@ a{
     /* text-shadow: 1px 1px var(--white); */
     font-size: 1.7rem;
     cursor: pointer;
+    text-shadow: -2px 2px  rgb(148, 150, 140)
+                 
 }
 
 .nav-logo{
@@ -51,8 +61,7 @@ a{
     height: 9vh;
     display: flex;
     justify-content: start;
-    align-items: center;
-    
+    align-items: center;   
     
 }
 
@@ -183,4 +192,68 @@ form > input{
     background-color: transparent;
     cursor: pointer;    
     border: 2px solid var(--greenyellow);
+}
+
+@media only screen and (max-width: 690px){
+    .main-container{
+        width: 84vw;
+    }
+    form{
+        width: 84vw;
+    }
+    .menu-display{
+        display:block ;
+        width: 100%;
+        justify-content: center;       
+        
+    }
+
+    .mobile-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 84vw;        
+        margin: auto;
+        
+    }
+    .hamburger {
+        display: flex;
+        justify-content: end;        
+        width: 100%;        
+
+    }
+    .menu-container{
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+
+    .menu-container li{
+        display: none;
+        
+    }
+
+    .mobile {
+        display: block;
+        overflow: hidden;
+        background-color: azure;
+        position: relative;
+        width: 100%;
+    }
+
+    .mobile li{
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+    
+
+    .fa-solid{
+        display: block;
+        cursor: pointer;
+    }
+    .big-btn{
+        width: 100%;
+    }
+
 }
