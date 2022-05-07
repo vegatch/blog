@@ -100,7 +100,7 @@ li a:hover {
 .main-container{    
     display: flex;
     justify-content: start;
-    margin: auto;
+    margin: 0 auto;
     /* background-color: hsl(84, 74%, 44%); */
     height: 100%;
 }
@@ -111,32 +111,32 @@ li a:hover {
     align-items: center;
 }
 .my-info-container{
-    padding-top: 4rem;
+    padding-top: 2rem;
     color: var(--greenyellow);
     line-height: 2rem;
     font-size: 1.1rem;
     letter-spacing: .2rem;
 }
 
-.my-name, .my-ability{
-    font-size: 2rem;
-    line-height: 4rem;
+/* .my-name, .my-ability{
+    /* font-size: 2rem;
+    line-height: 4rem; 
     
-}
+} */
 
 .my-name{
     font-size: 3.5rem;
     
 }
 
-.my-profile{
+/* .my-profile{
     margin-top: 1.2rem;
     line-height: 2.5rem;
-}
+} */
 
-.my-greeting{
-margin-bottom: 1.2rem;
-}
+/* .my-greeting{
+ margin-bottom: 1rem; 
+} */
 
 .big-btn{
     width: 20vw;
@@ -147,6 +147,9 @@ margin-bottom: 1.2rem;
     border: 1px solid var(--greenyellow);
     font-size: 1.3rem;
 }
+
+
+
 
 
 /* contact page style */
@@ -189,18 +192,25 @@ form > input{
 
 
 
+
+
+
 /* Styling mobile */
 
 @media only screen and (max-width: 760px){
-    
+    p, a {
+        font-size: 16px
+    };    
     .main-container, 
     form, 
     section,
     .my-info-container,
     .img-home-container,
     .menu-display,
-    .mobile-display{
+    .mobile-display,
+    #contact-form{
         width: 90vw;
+        background-color: antiquewhite;
     }
     
     .menu-display{
@@ -235,14 +245,15 @@ form > input{
         display: flex;
         justify-content: end;
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
+
     }
     a{
         color: var(--greenyellow);
     }
-    .nav-logo{
-        font-size: 1.5rem;
-    }
+    /* .nav-logo{
+        font-size: 1rem;
+    } */
     .mobile-links{
         position: static;
         display: none;
@@ -263,7 +274,9 @@ form > input{
         
     }
 
-
+    .nav-logo a{
+        font-size: 1.1rem;
+    }
     
 
     /* Contact page */   
@@ -380,7 +393,7 @@ form > input{
     }
     .btn-item a{
         color: var(--black);
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-weight: bolder;
     }
 
@@ -394,23 +407,25 @@ form > input{
     .my-ability{
         font-size: 1.1rem;
         font-weight: bolder;
-        text-align: auto;
-        line-height: 2rem;
+        text-align: left;
+        line-height: 2.5rem;
     }
 
-    .my-greeting, .my-profile{
-        font-size: 1.1rem;
-        line-height: 2rem;
-        letter-spacing: 0.1rem;
-        margin-bottom: 1.5rem;
-        text-align: auto;
+    .my-greeting, .my-name{
+        /* font-size: 1.1rem; */
+        /* line-height: 2rem; */
+        /* letter-spacing: rem; */
+        margin-bottom: 1rem;
+        text-align: left;
     }
     .big-btn a{
         color: var(--black);
         font-weight: bolder;
     }
-
-    .big-btn{
+    
+    .big-btn,
+    .btn-item,
+    .btn-mobile{
         width: 100%;
     }
 
