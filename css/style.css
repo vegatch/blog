@@ -198,9 +198,9 @@ form > input{
 /* Styling mobile */
 
 @media only screen and (max-width: 760px){
-    p, a {
-        font-size: 16px
-    };    
+    p{
+        font-size: 16px;
+    }
     .main-container, 
     form, 
     section,
@@ -208,9 +208,9 @@ form > input{
     .img-home-container,
     .menu-display,
     .mobile-display,
-    #contact-form{
-        width: 90vw;
-        background-color: antiquewhite;
+    .mobile-container
+    {
+        width: 92vw;
     }
     
     .menu-display{
@@ -227,12 +227,12 @@ form > input{
         display: block;
         width: 100%;        
         /* background-color: aquamarine; */
-        padding: .2rem 0;       
+        padding: .2rem 0;      
         
     }
 
     .mobile-container{
-        width: 84vw;
+        /* width: 90vw; */
         display: flex;
         align-items: center;
         margin: auto;
@@ -251,14 +251,14 @@ form > input{
     a{
         color: var(--greenyellow);
     }
-    /* .nav-logo{
-        font-size: 1rem;
-    } */
+
     .mobile-links{
         position: static;
         display: none;
-        width: 84vw;
+        /* width: 92vw; */
+        width: inherit;
         margin: auto;
+        /* width: 96vw; */
     }
 
     
@@ -385,15 +385,16 @@ form > input{
     /* Buttons design */
     .btn-item {
         background-color: var(--greenyellow);
-        border-radius: .5rem;
+        border-radius: .4rem;
         display: flex;
         justify-content: center;
         align-items: center; 
-        height: .7rem;       
+        height: .6rem;   
+            
     }
     .btn-item a{
         color: var(--black);
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: bolder;
     }
 
@@ -422,7 +423,9 @@ form > input{
         color: var(--black);
         font-weight: bolder;
     }
-    
+    .big-btn{
+        margin-top: 2rem;
+    }
     .big-btn,
     .btn-item,
     .btn-mobile{
