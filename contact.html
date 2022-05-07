@@ -20,18 +20,51 @@
 
 <body>
     <nav class="nav-container">
-        <div id="menu-display" class="menu-display"></div>
+        <div class="menu-display mobile-display"> </div>
     </nav>
-    <form id="contact-form">
-        <input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input placeholder="Enter your name" type="text" name="user_name">
-        <label>Email</label>
-        <input placeholder="Enter your email" type="email" name="user_email">
-        <label>Message</label>
-        <textarea placeholder="Enter your message" name="message"></textarea>
-        <input type="submit" value="Send">
-    </form>
+    <main>
+        <section>
+            <div class="contact-header">
+                <div class="text-container">
+                    <p>Contact me</p>
+                    <h1>I am here to help.</h1>
+                    <p>
+                        I am a <strong>fully trained </strong> JavaScript Developer capable
+                        of building tailored and scalable web
+                        applications for your business.
+                    </p>
+                </div>
+                
+                <div class="img-container">
+                    <!-- <img src="./pics/ben_pic.jpg" alt="Identity pic of me"> -->
+                    <figure>
+                        <img src="./pics/ben_pic.jpg" alt="Identity pic of me">
+                        <figcaption>Stravinsky Anglade</figcaption>
+                        <p>JavaScript Developer</p>
+                    </figure>    
+                </div>
+                <div class="personal-contact">
+                    <p>
+                        Reach out to me now.
+                    </p>
+                    <a href="tel:+1-786-247-2127"><i class="fa-solid fa-phone"> (786) 247-2127</i></a>
+                    <a href="mailto:email@example.com"><i class="fa-solid fa-envelope">  sbaedx@gmail.com</i></a>                   
+                </div>
+            </div>
+        </section>
+        <form id="contact-form">
+            <label for="message"></label>
+            <input type="hidden" name="contact_number">
+            <label>Name</label>
+            <input placeholder="Enter your name" type="text" name="user_name">
+            <label>Email</label>
+            <input placeholder="Enter your email" type="email" name="user_email">
+            <label>Message</label>
+            <textarea placeholder="Enter your message" name="message"></textarea>
+            <input class="btn-mobile btn-submit" type="submit" value="Send">        
+        </form>
+    </main>
+    
 </body>
 
 </html>

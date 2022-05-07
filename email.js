@@ -7,6 +7,7 @@
         })();
     
         window.onload = function() {
+            let message;
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // generate a five digit number for the contact_number variable
@@ -14,7 +15,9 @@
                 // these IDs from the previous steps
                 emailjs.sendForm('service_3yjgpu2', 'template_1xqzy6o', this)
                     .then(function() {
-                        console.log('SUCCESS!');
+                        message ="Your email has been sent successfully";
+                        console.log('SUCCESS!', message);
+                        
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
