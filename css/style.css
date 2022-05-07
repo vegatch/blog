@@ -186,10 +186,21 @@ form > input{
     border: 2px solid var(--greenyellow);
 }
 
+
+
+
+/* Styling mobile */
+
 @media only screen and (max-width: 760px){
     
-    .main-container, form, section{
-        width: 84vw;
+    .main-container, 
+    form, 
+    section,
+    .my-info-container,
+    .img-home-container,
+    .menu-display,
+    .mobile-display{
+        width: 90vw;
     }
     
     .menu-display{
@@ -377,12 +388,14 @@ form > input{
 
     .my-name{
         font-size: 1.3rem;
+        line-height: 2rem;
     }
 
     .my-ability{
         font-size: 1.1rem;
         font-weight: bolder;
-        text-align: justify;
+        text-align: auto;
+        line-height: 2rem;
     }
 
     .my-greeting, .my-profile{
@@ -390,7 +403,7 @@ form > input{
         line-height: 2rem;
         letter-spacing: 0.1rem;
         margin-bottom: 1.5rem;
-        text-align: justify;
+        text-align: auto;
     }
     .big-btn a{
         color: var(--black);
