@@ -376,11 +376,13 @@ form > input{
     /* home page */
 
     .my-name{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .my-ability{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        text-align: justify;
     }
 
     .my-greeting, .my-profile{
@@ -388,10 +390,15 @@ form > input{
         line-height: 2rem;
         letter-spacing: 0.1rem;
         margin-bottom: 1.5rem;
+        text-align: justify;
     }
     .big-btn a{
         color: var(--black);
         font-weight: bolder;
+    }
+
+    .big-btn{
+        width: 100%;
     }
 
 }
