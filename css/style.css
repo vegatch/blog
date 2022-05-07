@@ -8,7 +8,7 @@
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
-    font-size: 1.1rem;
+    font-size: 16px;
     
 }
 
@@ -113,21 +113,20 @@ li a:hover {
 .my-info-container{
     padding-top: 2rem;
     color: var(--greenyellow);
+    
+}
+
+
+.my-name, .my-ability{
+    font-size: 1.3rem;
+    margin: 1rem 0;
     line-height: 2rem;
-    font-size: 1.1rem;
-    letter-spacing: .2rem;
-}
-
-/* .my-name, .my-ability{
-    /* font-size: 2rem;
-    line-height: 4rem; 
-    
-} */
-
-.my-name{
-    font-size: 3.5rem;
     
 }
+.my-info-container p{
+    line-height: 1.5rem;
+}
+
 
 /* .my-profile{
     margin-top: 1.2rem;
@@ -140,12 +139,13 @@ li a:hover {
 
 .big-btn{
     width: 20vw;
-    min-width: 9vw;
+    /* min-width: 9vw; */
+    max-width: 30vw;
     background-color: transparent;
     height: 8vh;
     margin-top: 1.3rem;
     border: 1px solid var(--greenyellow);
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 
@@ -182,7 +182,7 @@ form > input{
 .btn-submit{
     height: 3rem;
     color: var(--greenyellow);
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bolder;
     background-color: transparent;
     cursor: pointer;    
@@ -400,25 +400,7 @@ form > input{
 
     /* home page */
 
-    .my-name{
-        font-size: 1.3rem;
-        line-height: 2rem;
-    }
-
-    .my-ability{
-        font-size: 1.1rem;
-        font-weight: bolder;
-        text-align: left;
-        line-height: 2.5rem;
-    }
-
-    .my-greeting, .my-name{
-        /* font-size: 1.1rem; */
-        /* line-height: 2rem; */
-        /* letter-spacing: rem; */
-        margin-bottom: 1rem;
-        text-align: left;
-    }
+    
     .big-btn a{
         color: var(--black);
         font-weight: bolder;
@@ -426,7 +408,9 @@ form > input{
     .big-btn{
         margin-top: 2rem;
     }
-    .big-btn,
+    .big-btn{
+        width: 20vw;
+    }
     .btn-item,
     .btn-mobile{
         width: 100%;
