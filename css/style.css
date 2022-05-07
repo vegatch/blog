@@ -138,9 +138,9 @@ li a:hover {
 } */
 
 .big-btn{
-    /* width: 20vw; */
-    min-width: 20vw; 
-    max-width: 30vw;
+    width: 20vw;
+    /* min-width: 00px;  */
+    max-width: 250px;
     background-color: transparent;
     height: 8vh;
     margin-top: 1.3rem;
