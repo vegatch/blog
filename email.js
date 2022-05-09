@@ -17,9 +17,12 @@
                     .then(function() {
                         message ="Your email has been sent successfully";
                         console.log('SUCCESS!', message);
-                        
+                        resetForm();
                     }, function(error) {
                         console.log('FAILED...', error);
                     });
             });
         }
+
+
+        

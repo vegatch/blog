@@ -52,11 +52,9 @@ let menuToggle = function(){
 }
 
 
-let onOff = function(){
-    let menuDisplay = document.querySelector(".nav-item");
-     if(menuDisplay.style.display === "block" ){
-        menuDisplay.style.display ="none" 
+let resetForm = function(){
+    let clearForm = document.querySelector("#contact-form");
+    clearForm.reset();
                
-    }
 }
-onOff()
+resetForm();
