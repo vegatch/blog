@@ -23,9 +23,15 @@ body{
 
 /* A{
     color: var(--white);    
-    /* text-transform: lowercase; */
+    /* text-transform: lowercase; 
 } */
-.main-container, 
+
+.menu-display,
+.my-footer{
+    width: 100%;
+}
+
+/* .main-container,  */
 .desktop-container,
 .img-home-container,
 .my-info-container {
@@ -105,13 +111,16 @@ li a:hover {
 /* End : Navigation for Desktop */
 
 /* home page style */
-.main-container{    
+
+.main-container{
     display: flex;
-    justify-content: start;
-    margin: 0 auto;
-    /* background-color: hsl(84, 74%, 44%); */
-    height: 100%;
+    justify-content: center;
+    width: 100%;
+    background: var(--whitesmoke)
 }
+
+
+
 
 .img-home-container{
     display: flex;
@@ -126,12 +135,14 @@ li a:hover {
 
 
 .my-name, .my-ability{
-    font-size: 1.5rem;
+    /* font-size: 1.6rem; */
     margin: 1rem 0;
     line-height: 2rem;
     
 }
-
+.my-name{
+    font-size: 1.7rem;
+}
 .my-ability{
     font-size: 1.3rem;
 }
@@ -205,7 +216,7 @@ form > input{
     p{
         font-size: 16px;
     }
-    .main-container, 
+    /* .main-container,  */
     form, 
     section,
     .my-info-container,
@@ -404,6 +415,10 @@ form > input{
     }
 
     /* home page */
+
+    .main-container-layout {
+        width: 95vw;
+    }
     .profile-container{
         display: block;
         background-color: ;
@@ -436,6 +451,8 @@ form > input{
         flex-direction: column;
         /* margin-bottom: 1rem; */
         color: var(--black);
+        /* background-color: red;
+        font-weight: normal; */
     }
 
     .profile-contact *{
@@ -447,6 +464,26 @@ form > input{
         margin-right: 1rem;
         color: rgb(1, 1, 80);
         
+    }
+    .my-footer{
+        display: block;
+        margin-top: 2rem;
+        
+    }
+    .footer-container{
+        height: 11vh;
+        width: 100%;
+        background-color: var(--black);
+        color: white;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-container p{
+        margin-bottom: .7rem;
     }
     .big-btn a{
         color: var(--black);

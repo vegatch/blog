@@ -41,6 +41,48 @@ let mobileNav = document.createElement('template')
     `;
     document.querySelector('.mobile-display').appendChild(mobileNav.content);
 
+let sideProfile = document.createElement('div')
+sideProfile.innerHTML =`
+            <div class="profile-container">
+                <figure class="img-container">
+                    <img class="profile-image" src="./pics/ben_new.jpg" alt="me">                    
+                </figure>                
+                <div class="profile-name">
+                    <div>                        
+                        <p>Stravinsky Bénédict Anglade</p>                        
+                    </div>      
+                    <div>
+                        <p>Software Engineer</p>
+                    </div>              
+                </div>
+                <div class="profile-contact">
+                    <a href="tel:+1-786-247-2127"><i class="fa-solid fa-phone"> (786) 247-2127</i></a>
+                    <a  href="mailto:email@example.com"><i class="fa-solid fa-envelope" > sbaedx@gmail.com</i></a>
+                </div>
+                <div class="profile-media">    
+                    <a href="https://github.com/vegatch"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/stravinsky-b%C3%A9n%C3%A9dict-anglade/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+`
+let divContainer = document.querySelector('.main-container-layout')
+divContainer.prepend(sideProfile);
+
+let myfooter = document.createElement("div");
+myfooter.innerHTML=`
+        <div class="footer-container">
+            <div>
+                <p>Designed and built by Stravinsky B Anglade</p>
+            </div>
+            <div>
+                <p> May 2022</p>
+            </div>
+        </div>
+`
+let footerContainer = document.querySelector(".my-footer")
+footerContainer.append(myfooter);
+
 let menuToggle = function(){
     let menu = document.querySelector(".mobile-links")
     if(menu.style.display === "none" ){
