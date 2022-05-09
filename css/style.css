@@ -520,7 +520,7 @@ form > input{
     }
     .img-container{
         width: inherit;
-        height: 50vh;
+        height: 60vh;
         background-color: #adff2f;
         margin-bottom: 1rem;
     }
