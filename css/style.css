@@ -126,10 +126,14 @@ li a:hover {
 
 
 .my-name, .my-ability{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 1rem 0;
     line-height: 2rem;
     
+}
+
+.my-ability{
+    font-size: 1.3rem;
 }
 .my-info-container p{
     line-height: 1.5rem;
@@ -429,18 +433,19 @@ form > input{
     }
     .profile-contact{
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 1rem;
+        flex-direction: column;
+        /* margin-bottom: 1rem; */
         color: var(--black);
     }
 
     .profile-contact *{
         color: var(--black);
         text-transform: lowercase;
+        margin-bottom: .5rem;
     }
     .profile-media *{
         margin-right: 1rem;
-        /* color: antiquewhite; */
+        color: rgb(1, 1, 80);
         
     }
     .big-btn a{
