@@ -520,6 +520,7 @@ form > input{
     }
     .img-container{
         width: inherit;
+        height: 50vh;
         background-color: #adff2f;
         margin-bottom: 1rem;
     }
@@ -559,9 +560,11 @@ form > input{
         color: rgb(1, 1, 80);
         
     }
-
+    .profile-name p{
+        font-size: 1.1rem;
+    }
     .my-name{
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
     .my-ability{
         font-size: 1.7rem;
