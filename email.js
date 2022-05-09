@@ -1,4 +1,11 @@
 
+let resetForm = function(){
+    let clearForm = document.querySelector("#contact-form");
+    clearForm.reset();
+               
+}
+resetForm();
+
 // Function from emailjs to send email from 
 
  (function() {

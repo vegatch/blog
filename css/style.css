@@ -110,26 +110,96 @@ li a:hover {
 
 /* End : Navigation for Desktop */
 
-/* home page style */
+/* ============================================ footer ===============================================*/
+.my-footer {
+    display: block;
+    margin-top: 2rem;
 
-.main-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background: var(--whitesmoke)
 }
 
-
-
-
-.img-home-container{
+.footer-container {
+    height: 11vh;
+    width: 100%;
+    background-color: var(--black);
+    color: white;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.footer-container p {
+    margin-bottom: .7rem;
+}
+
+
+/* ============================== home page style for Desktop =========================================*/
+.mobile-profile-container{
+    display: none;
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+    /* background: blue; */
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container-layout{
+    width: 70vw;
+    /* background-color: red; */
+    display: flex;
+    margin: 1rem 0;
+    
+    
+}
+
+.desktop-profile-container{
+    width: 40%;
+    margin-right: 2rem;
+}
+
+
+.desktop-profile-container .img-container {
+    width: inherit;
+}
+
+.desktop-profile-container .img-container .profile-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-name div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.profile-contact{
+    display: block;
+    margin: 1rem 0;
+}
+
+.profile-contact i{
+    color: #000000;
+    text-transform: lowercase;
+    margin: .5rem 0;
+}
+
+.profile-media i{
+    margin-right: 1rem;
+    color: var(--black);
+    font-size: 1.3rem;
 }
 .my-info-container{
-    padding-top: 2rem;
-    /* color: var(--black); */
+    width: 70%;
+    padding: 2rem 0;
+    margin-top: 5rem;
+    
     
 }
 
@@ -141,14 +211,25 @@ li a:hover {
     
 }
 .my-name{
-    font-size: 1.7rem;
+    font-size: 3rem;
 }
 .my-ability{
-    font-size: 1.3rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.9rem;
+}
+
+.my-ability, .my-name{
+    margin-bottom: 1.9rem;
 }
 .my-info-container p{
-    line-height: 1.5rem;
+    line-height: 2.5rem;
 }
+/* 
+.my-profile{
+    background-color: red;
+    
+} */
 
 
 
@@ -158,7 +239,7 @@ li a:hover {
     max-width: 180px;
     background-color: transparent;
     height: 8vh;
-    margin-top: 1.3rem;
+    margin-top: 3rem;
     border: 1px solid var(--black);
     font-size: 1rem;
 }
@@ -167,7 +248,7 @@ li a:hover {
 
 
 
-/* contact page style */
+/* start: contact page style */
 form{
     width: 70%;
     margin: 0 auto;
@@ -203,6 +284,7 @@ form > input{
     cursor: pointer;    
     border: 2px solid var(--greenyellow);
 }
+/* End: contact page style */
 
 
 
@@ -210,7 +292,11 @@ form > input{
 
 
 
-/* Styling mobile */
+
+
+
+
+/* =========================================== Styling mobile ============================================= */
 
 @media only screen and (max-width: 760px){
     p{
@@ -331,7 +417,7 @@ form > input{
     }
 
 
-    .img-container{        
+    .contact-header .img-container{        
         height: 40vh;
         display: flex;
         justify-content: center;
@@ -355,16 +441,16 @@ form > input{
         margin: auto;       
     }
 
-    img{
+    /* img{
         object-fit: cover;
         width: 100%;
         height: 100%;
-        max-width:700px;      
+        max-width:500px;      
         min-width: 200px;        
         border: .008rem solid var(--black);
-        /* margin: auto; */
+        margin: auto;
         box-shadow: .09rem .09rem var(--black);
-    } 
+    }  */
     figcaption{
         margin-top: 1rem;
         display: flex;
@@ -414,15 +500,23 @@ form > input{
         font-weight: bolder;
     }
 
-    /* home page */
 
+
+
+
+    /* ============================================= home page ====================================== */
+    .desktop-profile-container{
+        display: none;
+    }
     .main-container-layout {
         width: 95vw;
+        margin-top: .5rem;
+        display: block;
     }
-    .profile-container{
+    .mobile-profile-container{
         display: block;
         background-color: ;
-        color: black;
+        color: black;        
     }
     .img-container{
         width: inherit;
@@ -438,7 +532,7 @@ form > input{
     .profile-name div{
         display: flex;
         justify-content: center;
-        margin-bottom: .3rem;
+        margin-bottom: .3rem ;
     }
     
     .profile-image{
@@ -464,6 +558,17 @@ form > input{
         margin-right: 1rem;
         color: rgb(1, 1, 80);
         
+    }
+
+    .my-name{
+        font-size: 2.5rem;
+    }
+    .my-ability{
+        font-size: 1.5rem;
+    }
+
+    .my-info-container p{
+        line-height: 1.5rem;
     }
     .my-footer{
         display: block;

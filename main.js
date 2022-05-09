@@ -1,5 +1,5 @@
-const menuList = document.createElement('template');
-menuList.innerHTML = `
+let desktopNav = document.createElement("div");
+desktopNav.innerHTML = `
     <div class="menu-display">   
         <div class="desktop-container">
             <div class="nav-logo"><a href="./index.html">SBA</a></div>
@@ -14,36 +14,15 @@ menuList.innerHTML = `
         </div> 
     </div>
 `;
-document.querySelector('.menu-display').appendChild(menuList.content);
-console.log(menuList.content)
+let desktopNavContainer = document.querySelector(".menu-display")
+    desktopNavContainer.append(desktopNav);
 
-let mobileNav = document.createElement('template')
-    mobileNav.innerHTML = `
-    
-    <div class="mobile-display">
-        <div class="mobile-container">
-            <div class="nav-logo"><a href="./index.html">SBA</a></div>
-            <div class="hamburger">
-                <a onClick="menuToggle()" href='#'>
-                <i class="fa-solid fa-bars"></i>
-            </a>        
-            </div>
-        </div>        
-        <ul class="mobile-links" >                   
-            <li class="nav-item"><a href="./index.html">Home</a></li>
-            <li class="nav-item"><a href="./about.html">About</a></li>
-            <li class="nav-item"><a href="./work.html">Work</a></li>
-            <li class="nav-item"><a onClick="onOff()"  href="./contact.html">Contact</a></li>
-            <li class="nav-item btn-item"><a href="./resume.html">Resume</a></li>            
-        </ul>
-    </div>
-    
-    `;
-    document.querySelector('.mobile-display').appendChild(mobileNav.content);
 
-let sideProfile = document.createElement('div')
-sideProfile.innerHTML =`
-            <div class="profile-container">
+
+// Aside profile
+let DesktopSideProfile = document.createElement('div')
+DesktopSideProfile.innerHTML =`
+            <div class="desktop-aside-profile">
                 <figure class="img-container">
                     <img class="profile-image" src="./pics/ben_new.jpg" alt="me">                    
                 </figure>                
@@ -66,8 +45,75 @@ sideProfile.innerHTML =`
                 </div>
             </div>
 `
-let divContainer = document.querySelector('.main-container-layout')
-divContainer.prepend(sideProfile);
+let DesktopSideProfileContainer = document.querySelector(".desktop-profile-container")
+DesktopSideProfileContainer.append(DesktopSideProfile)
+let DesktopAsideContainer = document.querySelector('.main-container-layout')
+DesktopAsideContainer.prepend(DesktopSideProfileContainer);
+console.log(DesktopAsideContainer, 'Desktop version')
+
+
+
+
+let mobileNav = document.createElement("div")
+    mobileNav.innerHTML = `
+    
+    <div class="mobile-display">
+        <div class="mobile-container">
+            <div class="nav-logo"><a href="./index.html">SBA</a></div>
+            <div class="hamburger">
+                <a onClick="menuToggle()" href='#'>
+                <i class="fa-solid fa-bars"></i>
+            </a>        
+            </div>
+        </div>        
+        <ul class="mobile-links" >                   
+            <li class="nav-item"><a href="./index.html">Home</a></li>
+            <li class="nav-item"><a href="./about.html">About</a></li>
+            <li class="nav-item"><a href="./work.html">Work</a></li>
+            <li class="nav-item"><a onClick="onOff()"  href="./contact.html">Contact</a></li>
+            <li class="nav-item btn-item"><a href="./resume.html">Resume</a></li>            
+        </ul>
+    </div>
+    
+    `;
+    let mobileNavContainer = document.querySelector('.mobile-display')
+    mobileNavContainer.append(mobileNav);
+
+//Aside mobile profile
+let mobileAsideProfile = document.createElement('div')
+mobileAsideProfile.innerHTML =`
+            <div class="mobile-aside-profile">
+                <figure class="img-container">
+                    <img class="profile-image" src="./pics/ben_new.jpg" alt="me">                    
+                </figure>                
+                <div class="profile-name">
+                    <div>                        
+                        <p>Stravinsky Bénédict Anglade</p>                        
+                    </div>      
+                    <div>
+                        <p>Software Engineer</p>
+                    </div>              
+                </div>
+                <div class="profile-contact">
+                    <a href="tel:+1-786-247-2127"><i class="fa-solid fa-phone"> (786) 247-2127</i></a>
+                    <a  href="mailto:email@example.com"><i class="fa-solid fa-envelope" > sbaedx@gmail.com</i></a>
+                </div>
+                <div class="profile-media">    
+                    <a href="https://github.com/vegatch"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/stravinsky-b%C3%A9n%C3%A9dict-anglade/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+`
+let mobileAsideProfileContainer = document.querySelector(".mobile-profile-container")
+mobileAsideProfileContainer.append(mobileAsideProfile)
+let mobileAsideContainer = document.querySelector('.main-container-layout')
+mobileAsideContainer.prepend(mobileAsideProfileContainer);
+console.log(mobileAsideContainer, 'mobile version')
+
+
+
+
 
 let myfooter = document.createElement("div");
 myfooter.innerHTML=`
@@ -94,9 +140,8 @@ let menuToggle = function(){
 }
 
 
-let resetForm = function(){
-    let clearForm = document.querySelector("#contact-form");
-    clearForm.reset();
-               
-}
-resetForm();
+
+
+
+
+
