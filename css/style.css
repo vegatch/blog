@@ -558,6 +558,7 @@ form > input{
     .profile-media *{
         margin-right: 1rem;
         color: rgb(1, 1, 80);
+        margin-bottom: .2rem;
         
     }
     .profile-name p{
@@ -565,6 +566,7 @@ form > input{
     }
     .my-name{
         font-size: 2.4rem;
+        line-height: 2.6rem;
     }
     .my-ability{
         font-size: 1.7rem;
@@ -572,6 +574,7 @@ form > input{
 
     .my-info-container p{
         line-height: 1.5rem;
+        margin-top: 1rem;
     }
     .my-footer{
         display: block;
