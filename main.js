@@ -1,3 +1,5 @@
+
+
 let desktopNav = document.createElement("div");
 desktopNav.innerHTML = `
     <div class="menu-display">   
@@ -36,7 +38,10 @@ DesktopSideProfile.innerHTML =`
                 </div>
                 <div class="profile-contact">
                     <a href="tel:+1-786-247-2127"><i class="fa-solid fa-phone"> (786) 247-2127</i></a>
-                    <a  href="mailto:email@example.com"><i class="fa-solid fa-envelope" > sbaedx@gmail.com</i></a>
+                    <div class='email'>
+                        <a  href="mailto:email@example.com"><i class="fa-solid fa-envelope" ></i></a>
+                        <a> sbaedx@gmail.com</a>
+                    </div>
                 </div>
                 <div class="profile-media">    
                     <a href="https://github.com/vegatch"><i class="fa-brands fa-github"></i></a>

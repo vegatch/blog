@@ -166,6 +166,11 @@ li a:hover {
     width: inherit;
 }
 
+.img-container{
+    height: 300px;
+    padding-top: 8rem;
+}
+
 .desktop-profile-container .img-container .profile-image{
     object-fit: cover;
     width: 100%;
@@ -224,13 +229,12 @@ li a:hover {
 }
 .my-info-container p{
     line-height: 2.5rem;
+    width: 60%;
 }
-/* 
-.my-profile{
-    background-color: red;
-    
-} */
 
+.right-display{
+    width: 60%;
+}
 
 
 .big-btn{
@@ -249,12 +253,18 @@ li a:hover {
 
 
 /* start: contact page style */
+
+.form-container{
+    width: 50%;
+}
+
 form{
     width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     line-height: 1.5rem;
+    padding-top: 8rem;
     /* color: var(--black); */
         
 }
@@ -483,7 +493,10 @@ form > input{
         /* margin-right: 1rem; */
         font-size: 1rem; 
     }
-
+    .email{
+        display: flex;
+        align-items: center;
+    }
     /* Buttons design */
     .btn-item {
         background-color: var(--greenyellow);
