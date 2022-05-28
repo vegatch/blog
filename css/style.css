@@ -480,10 +480,9 @@ form > input{
         font-size: 1.2rem;
 
     }
-    .mobile-container a{
-        color: var(--white);
-    } 
-    .mobile-container a{
+
+   
+    .mobile-display a{
         text-decoration: none;
         color: var(--white);
         font-weight: bold;
@@ -627,9 +626,12 @@ form > input{
         align-items: center;
     }
     /* Buttons design */
-    .btn-item {
-        background-color: var(--greenyellow);
-        border-radius: .4rem;
+    .mobile-display .btn-item {
+        background-color: var(--white);
+        border-radius: 2rem;
+        width: 92%;
+        margin: auto;
+        height: 1rem;
         display: flex;
         justify-content: center;
         align-items: center; 
@@ -657,8 +659,7 @@ form > input{
         display: block;
     }
     .mobile-profile-container{
-        display: block;
-        background-color: ;
+        display: block;        
         color: black;        
     }
     .img-container{
@@ -666,7 +667,18 @@ form > input{
         height: 40vh;
         /* background-color: #adff2f; */
         margin-bottom: 1rem;
+        padding-top: .1rem;
+            
     }
+
+    .mobile-email{
+        display: flex;
+        align-items: center;        
+    }
+    .mobile-email a{
+        padding-left: .3rem;
+    }
+
     .profile-name {
         /* color: var(--greenyellow); */
         margin-bottom: 1rem;
@@ -701,7 +713,7 @@ form > input{
     .profile-media *{
         margin-right: 1rem;
         color: rgb(1, 1, 80);
-        margin-bottom: .2rem;
+        margin-bottom: 0rem;
         
     }
     .profile-name p{
@@ -715,6 +727,20 @@ form > input{
         font-size: 1.7rem;
     }
 
+        .big-btn,
+        .btn-submit {
+            width: 20vw;
+            /* min-width: 00px;  */
+            max-width: 180px;
+            background-color: transparent;
+            height: 40px;
+            margin-top: 2rem;
+            border: 1px solid var(--black);
+            font-size: 1rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            color: #000000;
+        }
     .my-info-container p{
         line-height: 1.5rem;
         margin-top: 1rem;

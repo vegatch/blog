@@ -75,7 +75,6 @@ let mobileNav = document.createElement("div")
             <li class="nav-item"><a href="./index.html">Home</a></li>
             <li class="nav-item"><a href="./about.html">About</a></li>
             <li class="nav-item"><a href="./work.html">Work</a></li>    
-            // <li class="nav-item"><a class="s-inte" onclick="return false" href="./work.html">Work</a></li> 
             <li class="nav-item"><a onClick="onOff()"  href="./contact.html">Contact</a></li>
             <li class="nav-item btn-item"><a href="./resume.html">Resume</a></li>            
         </ul>
@@ -102,7 +101,10 @@ mobileAsideProfile.innerHTML =`
                 </div>
                 <div class="profile-contact">
                     <a href="tel:+1-786-247-2127"><i class="fa-solid fa-phone"> (786) 247-2127</i></a>
-                    <a  href="mailto:email@example.com"><i class="fa-solid fa-envelope" > sbaedx@gmail.com</i></a>
+                    <div class="mobile-email">
+                        <a  href="mailto:email@example.com"><i class="fa-solid fa-envelope" ></i></a>
+                        <a> sbaedx@gmail.com</a>
+                    </div>
                 </div>
                 <div class="profile-media">    
                     <a href="https://github.com/vegatch"><i class="fa-brands fa-github"></i></a>
