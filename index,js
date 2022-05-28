@@ -1,0 +1,18 @@
+
+let myBtn = document.createElement("button")
+let myDiv = document.querySelector(".btn-container")
+myBtn.classList.add('cover-btn')
+myBtn.textContent = 'click here to meet your guy'
+myDiv.append(myBtn)
+
+myBtn.addEventListener("click", (e) =>{
+    e.preventDefault;
+    location.replace("./homePage.html")
+})
+
+// let openHomePage = function() {
+//   location.replace("./home.html")
+// }
+
+
+// openHomePage()

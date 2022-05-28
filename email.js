@@ -22,6 +22,7 @@ resetForm();
                 // these IDs from the previous steps
                 emailjs.sendForm('service_3yjgpu2', 'template_1xqzy6o', this)
                     .then(function() {
+                        openConfirmationPage()
                         message ="Your email has been sent successfully";
                         console.log('SUCCESS!', message);
                         resetForm();
@@ -32,4 +33,8 @@ resetForm();
         }
 
 
-        
+let openConfirmationPage = function() {
+  location.replace("./confirmation.html")
+}
+
+

@@ -4,14 +4,14 @@ let desktopNav = document.createElement("div");
 desktopNav.innerHTML = `
     <div class="menu-display">   
         <div class="desktop-container">
-            <div class="nav-logo"><a href="./index.html">SBA</a></div>
+            <div class="nav-logo"><a href="./homePage.html">SBA</a></div>
             
             <ul class="menu-container">                   
-                <li class="nav-item"><a href="/index.html">Home</a></li>
-                <li class="nav-item"><a href="/about.html">About</a></li>
-                <li class="nav-item"><a href="/work.html">Work</a></li>
-                <li class="nav-item"><a href="/contact.html">Contact</a></li>
-                <li class="nav-item btn-item"><a href="/resume.html">Resume</a></li>            
+                <li class="nav-item"><a href="./homePage.html">Home</a></li>
+                <li class="nav-item"><a href="./about.html">About</a></li>
+                <li class="nav-item"><a href="./work.html">Work</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                <li class="nav-item btn-item"><a href="./resume.html">Resume</a></li>            
             </ul>
         </div> 
     </div>
@@ -64,7 +64,7 @@ let mobileNav = document.createElement("div")
     
     <div class="mobile-display">
         <div class="mobile-container">
-            <div class="nav-logo"><a href="./index.html">SBA</a></div>
+            <div class="nav-logo"><a href="./homePage.html">SBA</a></div>
             <div class="hamburger">
                 <a onClick="menuToggle()" href='#'>
                 <i class="fa-solid fa-bars"></i>
@@ -72,7 +72,7 @@ let mobileNav = document.createElement("div")
             </div>
         </div>        
         <ul class="mobile-links" >                   
-            <li class="nav-item"><a href="./index.html">Home</a></li>
+            <li class="nav-item"><a href="./homePage.html">Home</a></li>
             <li class="nav-item"><a href="./about.html">About</a></li>
             <li class="nav-item"><a href="./work.html">Work</a></li>    
             <li class="nav-item"><a onClick="onOff()"  href="./contact.html">Contact</a></li>

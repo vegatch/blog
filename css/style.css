@@ -427,11 +427,92 @@ form > input{
     border-radius: 2rem;
 }
 
+/* ================================= CONFIRMATION PAGE ============================ */
+
+.confirmation-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.confirmation-container a{
+    text-decoration: none;   
+    color: var(--black);
+}
+/* =================================COVER PAGE ========================================================== */
+
+.cover-main-container{
+    background-color: aqua;
+}
+
+.cover-label{
+    background-color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.cover-header, .cover-footer{
+    height: 25vh;
+    width: 100vw;
+    background-color: var(--black);
+}
+
+.cover-label p:first-child{
+    padding-top: 4rem;
+    font-size: 3rem;
+    text-align: right;
+    /* padding-right: 3rem; */
+    text-shadow: 
+
+             /* 0 1px #808d93,
+            -1px 0 #cdd2d5,
+            -1px 2px #808d93,
+            -2px 1px #cdd2d5,
+            -2px 3px #808d93,
+            -3px 2px #cdd2d5,
+            -3px 4px #808d93,
+            -4px 3px #cdd2d5,
+            -4px 5px #808d93,
+            -5px 4px #cdd2d5,
+            -5px 6px #808d93,
+            -6px 5px #cdd2d5,
+            -6px 7px #808d93,
+            -7px 6px #cdd2d5,
+            -7px 8px #808d93,
+            -8px 7px #cdd2d5; */
+    ;
+}
+
+.cover-label :nth-child(2){
+    font-size: 2rem;
+    text-align: right;
+    /* padding-right: 3rem; */
+    margin: 3rem 0;
+
+}
+.btn-container .cover-btn{
+    height: 3rem;
+    width: 20rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top:72%;
+    transform: translateY(-10%);
+
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+}
+
 /* =========================================== Styling mobile ============================================= */
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 860px){
     p{
-        font-size: 16px;
+        font-size: 17px;
     }
     /* .main-container,  */
     form, 
@@ -541,7 +622,7 @@ form > input{
     .text-container{
         /* background-color: aqua; */
         height: 35vh; 
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
            
     }
     .contact-header h1{
@@ -614,12 +695,12 @@ form > input{
     }
     .personal-contact{
         margin-top: 1.8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .personal-contact i{        
         /* color: var(--greenyellow);    */
         /* margin-right: 1rem; */
-        font-size: 1rem; 
+        font-size: 1.1rem; 
     }
     .email{
         display: flex;
@@ -645,7 +726,50 @@ form > input{
         
     }
 
-
+    /* ======================================= COVER PAGE =========================================== */
+        .cover-label {
+            background-color: white;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .cover-header,
+        .cover-footer {
+            height: 25vh;
+            width: 100vw;
+            background-color: var(--black);
+        }
+    
+        .cover-label p:first-child {
+            padding-top: 6rem;
+            font-size: 1.6rem;
+            text-align: right;           
+        }
+    
+        .cover-label :nth-child(2) {
+            font-size: 1.2rem;
+            text-align: right;
+            /* padding-right: 3rem; */
+            margin: 3rem 0;
+    
+        }
+    
+        .btn-container .cover-btn {
+            height: 3rem;
+            width: 20rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            position: absolute;
+            top: 72%;
+            transform: translateY(-10%);
+    
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2rem;
+        }
 
 
 
@@ -653,11 +777,15 @@ form > input{
     .desktop-profile-container{
         display: none;
     }
+    .right-container{
+        margin-top: 1rem;
+    }
     .main-container-layout {
         width: 95vw;
         margin-top: .1rem;
         display: block;
     }
+
     .mobile-profile-container{
         display: block;        
         color: black;        
@@ -666,7 +794,7 @@ form > input{
         width: inherit;
         height: 40vh;
         /* background-color: #adff2f; */
-        margin-bottom: 1rem;
+        margin-bottom: .2rem;
         padding-top: .1rem;
             
     }
@@ -681,14 +809,14 @@ form > input{
 
     .profile-name {
         /* color: var(--greenyellow); */
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         
     }
 
     .profile-name div{
         display: flex;
         justify-content: center;
-        margin-bottom: .3rem ;
+        margin-bottom: .2rem ;
     }
     
     .profile-image{
@@ -708,12 +836,12 @@ form > input{
     .profile-contact *{
         color: var(--black);
         text-transform: lowercase;
-        margin-bottom: .5rem;
+        margin-bottom: .2rem;
     }
     .profile-media *{
-        margin-right: 1rem;
+        margin-right: 1rem auto;
         color: rgb(1, 1, 80);
-        margin-bottom: 0rem;
+        /* margin-bottom: 0rem; */
         
     }
     .profile-name p{
@@ -727,6 +855,7 @@ form > input{
         font-size: 1.7rem;
     }
 
+   
         .big-btn,
         .btn-submit {
             width: 20vw;
@@ -734,7 +863,7 @@ form > input{
             max-width: 180px;
             background-color: transparent;
             height: 40px;
-            margin-top: 2rem;
+            margin-top: 0 auto;
             border: 1px solid var(--black);
             font-size: 1rem;
             border-radius: 2rem;
@@ -743,7 +872,7 @@ form > input{
         }
     .my-info-container p{
         line-height: 1.5rem;
-        margin-top: 1rem;
+        margin-top: .2rem;
     }
     .my-footer{
         display: block;
@@ -762,18 +891,24 @@ form > input{
         flex-direction: column;
     }
 
+    .right-container{
+        width: 100%;
+    }
+    /* .contact-text, form{
+        width: 98%;
+    } */
     .footer-container p{
         margin-bottom: .7rem;
     }
-    .big-btn a{
+    .big-btn a, .btn-submit a{
         color: var(--black);
         font-weight: bolder;
+
     }
-    .big-btn{
+    
+    .big-btn, .btn-submit{
+        width: 20vw;        
         margin-top: 2rem;
-    }
-    .big-btn{
-        width: 20vw;
     }
     .btn-item,
     .btn-mobile{
