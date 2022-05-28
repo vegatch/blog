@@ -653,7 +653,7 @@ form > input{
 
 
     .contact-header .img-container{        
-        height: 40vh;
+        height: 30vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -776,6 +776,7 @@ form > input{
         
         .cover-btn{
             background-color: lightgrey;
+            margin-top: 3rem;
         }
         /* .btn-container .cover-btn {
             height: 3rem;
