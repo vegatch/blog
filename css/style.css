@@ -483,6 +483,14 @@ form > input{
     .mobile-container a{
         color: var(--white);
     } 
+    .mobile-container a{
+        text-decoration: none;
+        color: var(--white);
+        font-weight: bold;
+    }
+    .btn-item a{
+        color: var(--black);
+    }
 
     .mobile-links{
         position: static;
@@ -645,7 +653,7 @@ form > input{
     }
     .main-container-layout {
         width: 95vw;
-        margin-top: .5rem;
+        margin-top: .1rem;
         display: block;
     }
     .mobile-profile-container{
