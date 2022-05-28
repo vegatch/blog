@@ -7,11 +7,11 @@ desktopNav.innerHTML = `
             <div class="nav-logo"><a href="./index.html">SBA</a></div>
             
             <ul class="menu-container">                   
-                <li class="nav-item"><a href="./index.html">Home</a></li>
-                <li class="nav-item"><a href="./about.html">About</a></li>
-                <li class="nav-item"><a href="./work.html">Work</a></li>
-                <li class="nav-item"><a href="./contact.html">Contact</a></li>
-                <li class="nav-item btn-item"><a href="./resume.html">Resume</a></li>            
+                <li class="nav-item"><a href="/index.html">Home</a></li>
+                <li class="nav-item"><a href="/about.html">About</a></li>
+                <li class="nav-item"><a href="/work.html">Work</a></li>
+                <li class="nav-item"><a href="/contact.html">Contact</a></li>
+                <li class="nav-item btn-item"><a href="/resume.html">Resume</a></li>            
             </ul>
         </div> 
     </div>
@@ -74,7 +74,8 @@ let mobileNav = document.createElement("div")
         <ul class="mobile-links" >                   
             <li class="nav-item"><a href="./index.html">Home</a></li>
             <li class="nav-item"><a href="./about.html">About</a></li>
-            <li class="nav-item"><a href="./work.html">Work</a></li>
+            <li class="nav-item"><a href="./work.html">Work</a></li>    
+            // <li class="nav-item"><a class="s-inte" onclick="return false" href="./work.html">Work</a></li> 
             <li class="nav-item"><a onClick="onOff()"  href="./contact.html">Contact</a></li>
             <li class="nav-item btn-item"><a href="./resume.html">Resume</a></li>            
         </ul>
@@ -145,8 +146,19 @@ let menuToggle = function(){
 }
 
 
+let preventReload = function(){
+    for (let i = 0; i < aLink.length ; i += 1){
 
+        let aLink = document.getElementsByTagName ("a");
+        aLink.addEventListener("click", function (event){
+        event.preventDefault()
+         })
+    }
+    
+}
+preventReload()
 
-
-
-
+// $('nav li a').click(function (event) {
+//   event.preventDefault();
+//   // or use return false;
+// });

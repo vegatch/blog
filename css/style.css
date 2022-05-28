@@ -13,6 +13,27 @@
     
 }
 
+/* CSS Page animation Section : Begin */
+
+main{
+    animation: transitionIn 1ms;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+/* CSS Page animation Section : End */
+
 body{
     height: 100px;
     background-color: var(--whitesmoke);   
@@ -21,6 +42,27 @@ body{
     
 }
 
+
+.transition-page{
+    opacity: 1;
+    transition: 100ms;
+     /* transform: translateX(0);
+    transform-origin: left;  */
+}
+
+html.is-animating .transition-page{
+    opacity: 0;
+    /* transform: translateX(100%); */
+}   
+
+
+html.is-rendering .transition-page{
+    opacity: 1;
+}
+
+html.is-leaving .transition-page{
+    opacity: 0;
+} 
 /* A{
     color: var(--white);    
     /* text-transform: lowercase; 
@@ -32,13 +74,13 @@ body{
 }
 
 /* .main-container,  */
-.desktop-container,
+/* .desktop-container,
 .img-home-container,
 .my-info-container {
-    width: 70vw;
+    width: 60vw;
     
-}
-/* Start : Navigation for Desktop */
+} */
+/* ......................Start : Navigation for Desktop ...........................................*/
 
 .mobile-display{
     display: none;
@@ -53,7 +95,7 @@ body{
 }
     
 .desktop-container {
-    width: 70vw;
+    width: 60vw;
     display: flex;
     align-items: center;
     margin: auto;
@@ -127,6 +169,7 @@ li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .footer-container p {
@@ -148,7 +191,7 @@ li a:hover {
 }
 
 .main-container-layout{
-    width: 70vw;
+    width: 60vw;
     /* background-color: red; */
     display: flex;
     margin: 1rem 0;
@@ -159,8 +202,15 @@ li a:hover {
 .desktop-profile-container{
     width: 40%;
     margin-right: 2rem;
+    height: inherit;
+    /* position: fixed; */
 }
 
+/* .desktop-aside-profile{
+    position: fixed;
+    bottom: 40%;
+    top: 10%;
+} */
 
 .desktop-profile-container .img-container {
     width: inherit;
@@ -200,8 +250,12 @@ li a:hover {
     color: var(--black);
     font-size: 1.3rem;
 }
-.my-info-container{
-    width: 70%;
+
+.desktop-profile-container{
+    width: 40%;
+}
+.right-container{
+    width: 60%;
     padding: 2rem 0;
     margin-top: 5rem;
     
@@ -227,9 +281,9 @@ li a:hover {
 .my-ability, .my-name{
     margin-bottom: 1.9rem;
 }
-.my-info-container p{
+.right-container p{
     line-height: 2.5rem;
-    width: 60%;
+    /* width: 60%; */
 }
 
 .right-display{
@@ -237,74 +291,141 @@ li a:hover {
 }
 
 
-.big-btn{
+.big-btn, .btn-submit{
     width: 20vw;
     /* min-width: 00px;  */
     max-width: 180px;
     background-color: transparent;
-    height: 8vh;
-    margin-top: 3rem;
+    height: 40px;
+    margin-top: 2rem;
     border: 1px solid var(--black);
     font-size: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.big-btn a{
+    
+    text-decoration: none;
+    list-style: none;
+    color: var(--black);
+        
+}
+
+.right-container{
+    width: 100%;
+    /* background-color: #adff2f; */
+}
+
+.my-profile{
+    width: 100%;
+    /* background-color: #0000ff; */
 }
 
 
-
-
-
-/* start: contact page style */
+/* ............................................start: contact page style ...................................*/
 
 .form-container{
-    width: 50%;
+    width: 60%;
+    display: block;
+    /* background-color: #0000ff; */
 }
 
 form{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     line-height: 1.5rem;
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
     /* color: var(--black); */
         
+}
+
+.contact-text{
+    padding-top: 0rem;
+    width: 90%;
+    margin: auto;
+    line-height: 1.7rem;
+}
+
+.contact-text p{
+    margin-bottom: 1rem;
 }
 
 form > *{
     max-width: 600px;
     
 }
+
+form input {
+    margin-bottom: .8rem;
+    /* background-color: aqua; */
+}
+
 form > textarea{
     height: 20rem;
-    margin-bottom: 1.4rem;
+    margin-bottom: 0rem;
     padding: .4rem;
 }
 
 form > input{
-    height: 1.7rem;
+    height: 1.2rem;
     padding: .4rem;
     
 }
 
-.btn-submit{
+/* .btn-submit{
     height: 3rem;
-    /* color: var(--greenyellow); */
+   
     font-size: 1rem;
     font-weight: bolder;
     background-color: transparent;
     cursor: pointer;    
     border: 2px solid var(--greenyellow);
-}
+} */
 /* End: contact page style */
 
+/* =================================== WORK PAGE ============================================================ */
+
+.construction{
+        font-size: 3rem;
+        text-align: left;
+        margin-top: 0 auto;
+        
+}
 
 
 
 
+/* =======================================  About me ==========================================================*/
+.right-display{
+    /* background-color: #adff2f; */
+    width: 85%;
+}
+.right-display p{
+    margin-bottom: .5rem;
+    text-justify: newspaper;
+}
 
+.right-display p::first-letter{
+    font-size: 1.2rem;
+}
 
+/* ==================================Resume ========================================================== */
+.resume{
+    position: relative;
+    top: 40vh;
+    left: 40vw;
+        
+}
 
-
-
+.resume button{
+    height: 4rem;
+    width: 12rem;
+    border-radius: 2rem;
+}
 
 /* =========================================== Styling mobile ============================================= */
 
@@ -511,6 +632,7 @@ form > input{
         /* color: var(--black); */
         font-size: 1rem;
         font-weight: bolder;
+        
     }
 
 
@@ -628,3 +750,6 @@ form > input{
 /* end of media query */
 
 
+/* .nav-container li a{
+    background-color: #0000ff;
+} */
