@@ -655,8 +655,8 @@ form > input{
     }
     .img-container{
         width: inherit;
-        height: 60vh;
-        background-color: #adff2f;
+        height: 40vh;
+        /* background-color: #adff2f; */
         margin-bottom: 1rem;
     }
     .profile-name {
