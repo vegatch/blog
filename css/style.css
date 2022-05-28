@@ -664,7 +664,7 @@ form > input{
 
     figure{
         height: inherit;  
-        min-height: 300px; 
+        min-height: 200px; 
         width: inherit;
         display: flex;        
         flex-direction: column;
