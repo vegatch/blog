@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/resume.css">
     <script src="./main.js" defer></script>
     <script src="./resume.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
 <body>
@@ -19,13 +20,17 @@
     </nav>
     
     <main>      
-        <div class="download-container">
+        <div class="download-container">        
             <a class="resume"    href="CV.pdf" download="CV">
-                <button type="button">Download my resume</button>
+                <button class="btnPdf" type="button">Download my resume</button>
             </a>
         </div>  
         <div class="resume-container">
 
+        </div>
+        <div>
+            <!-- <button class="btnPdf" type="button">Download my resume</button> -->
+            <a href="javascript:generatorOfPDF()">Dowload PDF</a>
         </div>
        
 

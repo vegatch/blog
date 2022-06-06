@@ -9,9 +9,14 @@ nameTitleDiv.classList.add("name-div")
 let nameP = document.createElement("p")
 let titleP = document.createElement("p")
 nameP.innerHTML = 'Stravinsky Bénédict Anglade'
-titleP.innerHTML = 'Software Engineer'
+titleP.innerHTML = 'Software Developer'
+
+let headerNewline = document.createElement("br")
+
 nameTitleDiv.append(nameP, titleP)
-headerDiv.append(nameTitleDiv)
+headerDiv.append(nameTitleDiv, headerNewline)
+
+
 
 let contactDiv = document.createElement("div")
 contactDiv.classList.add("contact-div")
@@ -63,6 +68,8 @@ educationP.classList.add("headerSection")
 educationP.classList.add("text-bold")
 educationP.textContent = 'EDUCATION'
 educationHeaderDiv.append(educationP)
+
+let educationNewLine = document.createElement("br")
 
 let educationFirstRowDiv = document.createElement("div")
 educationFirstRowDiv.classList.add("flex-container")
@@ -147,7 +154,7 @@ achievementDivThree.append(educationThree)
 educationUl.append(achievementDivThree)
 
 
-educationDiv.append(educationHeaderDiv, educationFirstRowDiv, educationSecondRowDiv, educationUl)
+educationDiv.append(educationNewLine, educationHeaderDiv, educationFirstRowDiv, educationSecondRowDiv, educationUl)
 
 // Education section : End
 
@@ -550,7 +557,7 @@ additionalWorkRealizationTwoDiv.classList.add("flex-container")
 let spanAdditionalWorkRealizationTwo = document.createElement("span") 
 spanAdditionalWorkRealizationTwo.classList.add("circle")
 let additionalWorkRealizationTwoP = document.createElement("p")
-additionalWorkRealizationTwoP.textContent = 'Use SSRS to make patient\'s data dynamic and available in point in time.'
+additionalWorkRealizationTwoP.textContent = 'Use SSRS to make patient\'s data report dynamic and available in point in time.'
 additionalWorkRealizationTwoDiv.append(spanAdditionalWorkRealizationTwo, additionalWorkRealizationTwoP)
 
 
@@ -565,3 +572,27 @@ workAdditionalDiv.append(workHeaderAdditionalDiv, additionalRowOneDiv, additiona
 // Additional Work experience : End =====================
 resumeBodyDiv.append(educationDiv, skillsDiv, projectsDiv, workDiv, workAdditionalDiv)
 
+
+
+
+
+//Pdf generator function from jsPDF library
+
+const generatorOfPDF = function() {
+//  var doc = new jsPDF();  //create jsPDF object
+ window.jsPDF = window.jspdf.jsPDF;
+ const doc =window.jsPDF
+  doc.fromHTML(document.querySelector(".resume-container"), // page element which you want to print as PDF
+  15,
+  15, 
+  {
+    'width': 170  //set width
+  },
+  function(a) 
+   {
+    doc.save("resume.pdf"); // save file name as resume.pdf
+  });
+}
+
+const btnConvertToPdf = document.querySelector(".btnPdf")
+btnConvertToPdf.addEventListener("click", generatorOfPDF)

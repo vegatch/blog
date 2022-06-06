@@ -1,17 +1,32 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .resume-container{
     width: 60vw;
-    margin: auto;
+    margin:  auto;
     background-color: bisque;
 }
 
+.header-container, .resume-body-container{
+    margin: 0rem 1rem;
+}
 .header-container p{
      text-align: center;
-     margin: .5rem 0 1rem 0
+     /* margin: .5rem 0 1rem 0 */
      /* margin-top: 5rem; */
 }
 
+.name-div p:first-child{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2rem;
+}
 
-
+.name-div p:last-child {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
 .contact-div{
     display: flex;
     justify-content: center;
