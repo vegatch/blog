@@ -87,7 +87,7 @@
     border-radius: 50%;
     background-color: black;
     margin-right: .5rem ;
-    margin-left: 1.5rem;
+    margin-left: 1.8rem;
 }
 
 .section-detail-container{
@@ -112,10 +112,7 @@
     margin-top: 1rem;
 }
 
-.flex-container span{
-    margin-left: .5rem;
+.skills-section-container span{
+    margin-left: .3rem;
 }
 
-.project-realization-date{
-    
-}
