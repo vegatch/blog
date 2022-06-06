@@ -1,0 +1,121 @@
+.resume-container{
+    width: 60vw;
+    margin: auto;
+    background-color: bisque;
+}
+
+.header-container p{
+     text-align: center;
+     margin: .5rem 0 1rem 0
+     /* margin-top: 5rem; */
+}
+
+
+
+.contact-div{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-div p{
+    margin:0;
+    padding-left: .2rem;
+    
+}
+
+.media-container{
+    display: flex;
+    justify-content: center;
+    margin: .4rem;
+}
+
+.media-container a{
+   margin-left: .2rem;
+   color: black;
+   text-decoration: none;
+}
+
+.objective-container p{
+    text-align: left;
+    line-height: 1.3rem;
+    
+}
+
+.headerSection{
+    border-bottom: 1px solid black;
+    /* margin-top:1rem ; */
+}
+
+.schoolSkills{
+    display: block;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-margin{
+    margin-left: .5rem;
+}
+
+.section-detail-container{
+    display: block;
+}
+
+.flex-container{
+    display: flex;
+    align-items:center;
+    /* background-color: blue; */
+    width: 100%;
+    
+    
+
+}
+
+.link-comtainer a{
+    text-decoration: none;
+    color: black;
+}
+
+.link-comtainer{
+    margin: .3rem 0rem;
+}
+
+.circle{
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: .5rem ;
+    margin-left: 1.5rem;
+}
+
+.section-detail-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-row{
+    width: 75vw;
+}
+.right-row{
+    text-align: right;
+    width: 25vw;
+}
+
+.rightSecondDiv-container{
+    text-align: right;
+    /* background-color: aqua; */
+}
+
+.top-margin{
+    margin-top: 1rem;
+}
+
+.flex-container span{
+    margin-left: .5rem;
+}
+
+.project-realization-date{
+    
+}
